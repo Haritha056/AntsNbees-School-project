@@ -1,0 +1,16 @@
+RewriteEngine on 
+RewriteRule ^Home index.php
+RewriteRule ^About about.php
+RewriteRule ^Correspondent founder.php
+RewriteRule ^Director director.php
+RewriteRule ^Principal  principal.php
+RewriteRule ^Academics academics.php
+RewriteRule ^Admission admission.php
+RewriteRule ^Activities activities.php
+RewriteRule ^Gallery gallery.php
+RewriteRule ^Contact contact.php
+
+
+ErrorDocument 404 /error-404
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /error.php [L]
